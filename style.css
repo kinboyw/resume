@@ -60,14 +60,47 @@ section.contact{
   margin-top:3rem;
 }
 section.contact > ul > li{
-  padding:0.5rem;
+  margin-bottom:0.7rem;
   width:100%;
   border-bottom:0.05rem solid #9D9B9B;
 }
 section.contact span.list-icon {
   border-right:0.05rem solid #9D9B9B;
+  margin:0.5rem;
 }
 section.contact span.list-text {
+  margin:0.5rem;
+}
+section.skills{
+  text-align: center;
+  background-color: #46BEA9;
+  margin-top:2rem;
+}
+section.skills > .title{
+  font-size:1.3rem;
+  padding:1.5rem 0;
+}
+section.skills ul>li{
+  display:flex;
+  justify-content: space-between;
+  border-bottom:0.1rem solid black;
+  margin:0 1rem;
+  padding:1rem 0;
+}
+section.slills .skill-point{
+  display:flex;
+  justify-content: space-around;
+}
+section.skills .skill-point span{
+  display:inline-block;
+  width:0.7rem;
+  height:0.7rem;
+  border-radius:50%;
+  margin:0 0.1rem;
+  background-color: #fff;
+}
+section.skills .skill-point span.black{
+  background-color: black;
 }
 .article{
   width:60rem;
