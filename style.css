@@ -14,7 +14,6 @@ html{
 }
 .HomeWrapper{
   width:80rem;
-  border:1px solid red;
   margin:0 auto;
   padding-top:1.25rem;
   display:flex;
@@ -23,8 +22,10 @@ html{
 }
 .aside{
   width:18.5rem;
-  border:1px solid green;
 }
+/*
+ *Avatar
+ * */
 .aside > .avatar{
   display:flex;
   flex-flow: column nowrap;
@@ -54,6 +55,10 @@ html{
   letter-spacing:0.2rem;
   color:#696969
 }
+
+/*
+ *contact
+ * */
 section.contact{
   display:flex;
   justify-content: center;
@@ -76,6 +81,11 @@ section.skills{
   background-color: #46BEA9;
   margin-top:2rem;
 }
+
+/*
+ *Skills
+ * */
+
 section.skills > .title{
   font-size:1.3rem;
   padding:1.5rem 0;
@@ -83,7 +93,7 @@ section.skills > .title{
 section.skills ul>li{
   display:flex;
   justify-content: space-between;
-  border-bottom:0.1rem solid black;
+  border-bottom:0.05rem solid black;
   margin:0 1rem;
   padding:1rem 0;
 }
@@ -102,8 +112,65 @@ section.skills .skill-point span{
 section.skills .skill-point span.black{
   background-color: black;
 }
+
+/*
+ * Language
+ * */
+section.language{
+  text-align: center;
+}
+section.language > .title{
+  font-size:1.3rem;
+  padding:1.5rem 0;
+  color:#46BEA9;
+}
+section.language > .title > span{
+  color: black;
+}
+section.language ul>li{
+  display:flex;
+  justify-content: space-between;
+  border-bottom:0.05rem solid black;
+  margin:0 1rem;
+  padding:1rem 0;
+}
+section.language .lang-point{
+  display:flex;
+  justify-content: space-around;
+}
+section.language .lang-point span{
+  display:inline-block;
+  width:0.7rem;
+  height:0.7rem;
+  border-radius:50%;
+  margin:0 0.1rem;
+  background-color: #46BEA9;
+}
+section.language .lang-point span.none{
+  background-color: #BBBBBB;
+}
+/*
+ * Project
+ * */
+section.project{
+  text-align: center;
+}
+section.project > .title{
+  font-size:1.3rem;
+  padding:1.5rem 0;
+  color:#46BEA9;
+}
+section.project > .title > span{
+  color: black;
+}
+section.project  .proj-name{
+  font-weight:900;
+}
+section.project .proj-detail{
+  font: italic 0.8rem "Fira Sans", serif;
+}
 .article{
   width:60rem;
-  border:1px solid blue;
   background-color: #fff;
+  box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.18);
 }
