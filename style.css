@@ -230,7 +230,7 @@ section.experience::after{
   position: absolute;
   top: .5rem;
   bottom: 0.5rem;
-  left:8.5rem;
+  left:9rem;
   z-index: 1;
   background: #C5C5C5;
 }
@@ -244,9 +244,24 @@ section.experience> .period:last-child{
   margin-bottom:1rem;
 }
 section.experience> .period > .left{
+  position:relative;
   white-space:nowrap;
   text-align:center;
-  margin-right:2rem;
+}
+section.experience> .period> .left::before{
+  content: '';
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #FFFFFF;
+  border: 0.15rem solid #56EBA9;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 8.55rem;
+  top: 3px;
+  z-index: 2;
 }
 section.experience> .period > .left > .time{
   background-color:black;
@@ -264,8 +279,8 @@ section.experience> .period > .left > .location{
 section.experience> .period> .left > .location::after{
   content:"";
   display:inline-block;
-  width:0.5rem;
-  height:0.5rem;
+  width:0.3rem;
+  height:0.3rem;
   border-radius:50%;
   background-color:#46EBA9;
   margin-left:0.2rem;
@@ -273,21 +288,7 @@ section.experience> .period> .left > .location::after{
 
 section.experience> .period> .right{
   position:relative;
-}
-section.experience> .period> .right::after{
-  content: '';
-  width: 0.6rem;
-  height: 0.6rem;
-  background: #FFFFFF;
-  border: 0.15rem solid #56EBA9;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  position: absolute;
-  left: -1.75rem;
-  top: 3px;
-  z-index: 2;
+  margin-left:4rem;
 }
 section.experience> .period> .right> .title{
   font-size:1.2rem;
