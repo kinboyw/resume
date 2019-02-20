@@ -67,29 +67,43 @@ section.contact{
   display:flex;
   justify-content: center;
   margin-top:3rem;
+  color:#333333;
 }
 section.contact > ul > li{
   margin-bottom:0.7rem;
   width:100%;
-  border-bottom:0.05rem solid #9D9B9B;
+  border-bottom:0.05rem solid #AEAEAD;
 }
 section.contact span.list-icon {
-  border-right:0.05rem solid #9D9B9B;
-  margin:0.5rem;
+  display:inline-block;
+  border-right:0.05rem solid #AEAEAD;
+  padding:0.5rem;
 }
 section.contact span.list-text {
+  display:inline-block;
   margin:0.5rem;
-}
-section.skills{
-  text-align: center;
-  background-color: #46BEA9;
-  margin-top:2rem;
 }
 
 /*
  *Skills
  * */
+section.skills{
+  color:#333333;
+  padding:1.5rem 0;
+  text-align: center;
+  background-color: #46BEA9;
+  margin-top:2rem;
 
+  background-color: #46BEA9;
+  background-image: 
+    linear-gradient(135deg, #ECECEC 50%, transparent 50%), 
+    linear-gradient(225deg, #ECECEC 50%, transparent 50%), 
+    linear-gradient(45deg, #ECECEC 50%, transparent 50%), 
+    linear-gradient(-45deg, #ECECEC 50%, transparent 50%);
+  background-position: top left, top left, bottom left, bottom left;
+  background-size: 12px 12px;
+  background-repeat: repeat-x;
+}
 section.skills > .title{
   font-size:1.3rem;
   padding:1.5rem 0;
@@ -97,7 +111,7 @@ section.skills > .title{
 section.skills ul>li{
   display:flex;
   justify-content: space-between;
-  border-bottom:0.05rem solid black;
+  border-bottom:0.01rem solid black;
   margin:0 1rem;
   padding:1rem 0;
 }
@@ -259,7 +273,7 @@ section.experience> .period> .left::before{
   -ms-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
-  left: 8.55rem;
+  left: 8.61rem;
   top: 3px;
   z-index: 2;
 }
@@ -321,5 +335,4 @@ section.experience> .period> .right> .detail>  ul{
   right:0;
   z-index:-1 !important;
 }
-
 
