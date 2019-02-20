@@ -217,7 +217,6 @@ section.project .proj-detail{
 }
 
 section.experience{
-  height:100%;
   display:flex;
   position:relative;
   flex-flow:column nowrap;
@@ -227,6 +226,7 @@ section.experience{
 section.experience::after{
   content: '';
   width: 1px;
+  height:100%;
   position: absolute;
   top: .5rem;
   bottom: 0.5rem;
@@ -239,6 +239,9 @@ section.experience> .period{
   display:flex;
   justify-content: center;
   margin-bottom:5rem;
+}
+section.experience> .period:last-child{
+  margin-bottom:1rem;
 }
 section.experience> .period > .left{
   white-space:nowrap;
@@ -268,13 +271,41 @@ section.experience> .period> .left > .location::after{
   margin-left:0.2rem;
 }
 
+section.experience> .period> .right{
+  position:relative;
+}
+section.experience> .period> .right::after{
+  content: '';
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #FFFFFF;
+  border: 0.15rem solid #56EBA9;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.75rem;
+  top: 3px;
+  z-index: 2;
+}
 section.experience> .period> .right> .title{
-  font-size:1rem:
+  font-size:1.2rem;
+}
+section.experience> .period> .right> .title > em{
+  font-weight:bold;
+}
+section.experience> .period> .right> .detail ul{
+  font-size:0.9rem;
+  list-style:disc inside none;
 }
 
-section.experience> .period> .right> .detail{
-  font-size:0.6rem;
-}
+
+/*
+section.experience> .period> .right> .detail>  ul{
+  font-size:0.7rem !important;
+  list-style:disc inside none;
+}*/
 
 /*
  *Ribbon
