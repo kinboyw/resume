@@ -3,6 +3,9 @@
   display:block;
   clear:both;
 }
+
+*{box-sizing:border-box;}
+
 .icon {
   width: 1em; height: 1em;
   vertical-align: -0.15em;
@@ -14,14 +17,15 @@ html{
 }
 .HomeWrapper{
   width:80rem;
-  margin:0 auto;
-  padding-top:1.25rem;
+  margin:1.5rem auto;
+  padding:1.25rem 0;
   display:flex;
   justify-content: left;
   background-color: #ECECEC;
 }
 .aside{
   width:18.5rem;
+  padding-top:4.5rem;
 }
 /*
  *Avatar
@@ -154,6 +158,11 @@ section.language .lang-point span.none{
  * */
 section.project{
   text-align: center;
+  margin:2rem 0;
+}
+section.project > ul > li{
+  margin:1rem ;
+  text-align: left;
 }
 section.project > .title{
   font-size:1.3rem;
@@ -164,13 +173,121 @@ section.project > .title > span{
   color: black;
 }
 section.project  .proj-name{
+  text-align:center;
   font-weight:900;
 }
 section.project .proj-detail{
   font: italic 0.8rem "Fira Sans", serif;
 }
+
+/*
+ *Articlew
+ * */
+
 .article{
   width:60rem;
+  padding:4.5rem;
   background-color: #fff;
-  box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.18);
+  box-shadow: 1px 0px 1px 0px rgba(186,186,186,1);
 }
+.article > header {
+  display:flex;
+  justify-content: space-around;
+}
+.article > header > img.qrcode{
+  width:6.75rem;
+  height:6.75rem;
+  margin-right:2.5rem;
+}
+.article > header > .description{
+  font: italic 1.2rem "Fira Sans", serif;
+  color:#929596;
+  letter-spacing:0.1rem;
+}
+.article > header > .description > em{
+  font-weight:bold;
+  color:#46BEA9;
+}
+.article > .title{
+  color:#DADBDA;
+  font-size:2rem;
+  font-weight:bold;
+  text-align:center;
+  margin:5rem 0;
+}
+
+section.experience{
+  height:100%;
+  display:flex;
+  position:relative;
+  flex-flow:column nowrap;
+  justify-content: flex-start;
+}
+
+section.experience::after{
+  content: '';
+  width: 1px;
+  position: absolute;
+  top: .5rem;
+  bottom: 0.5rem;
+  left:8.5rem;
+  z-index: 1;
+  background: #C5C5C5;
+}
+
+section.experience> .period{
+  display:flex;
+  justify-content: center;
+  margin-bottom:5rem;
+}
+section.experience> .period > .left{
+  white-space:nowrap;
+  text-align:center;
+  margin-right:2rem;
+}
+section.experience> .period > .left > .time{
+  background-color:black;
+  color:white;
+  font-size:0.8rem;
+  font-weight:bold;
+  padding:0.5rem;
+  border-radius:1rem/1rem;
+}
+section.experience> .period > .left > .location{
+  margin-top:1rem;
+  font-size:0.7rem;
+  color:#9D9B9B;
+}
+section.experience> .period> .left > .location::after{
+  content:"";
+  display:inline-block;
+  width:0.5rem;
+  height:0.5rem;
+  border-radius:50%;
+  background-color:#46EBA9;
+  margin-left:0.2rem;
+}
+
+section.experience> .period> .right> .title{
+  font-size:1rem:
+}
+
+section.experience> .period> .right> .detail{
+  font-size:0.6rem;
+}
+
+/*
+ *Ribbon
+ * */
+#ribbon{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index:-1 !important;
+}
+
+
