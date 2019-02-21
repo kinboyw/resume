@@ -1,0 +1,5 @@
+@media print { 
+ canvas { display: none !important; } 
+ .HomeWrapper{ margin:0 auto !important; }
+ body{ background-color: #ECECEC !important; }
+}

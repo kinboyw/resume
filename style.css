@@ -3,7 +3,16 @@
   display:block;
   clear:both;
 }
-
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+a:hover 
+{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
 *{box-sizing:border-box;}
 
 .icon {
@@ -79,7 +88,7 @@ section.contact span.list-icon {
   border-right:0.05rem solid #AEAEAD;
   padding:0.5rem;
 }
-section.contact span.list-text {
+section.contact .list-text {
   display:inline-block;
   margin:0.5rem;
 }
@@ -110,12 +119,17 @@ section.skills > .title{
 }
 section.skills ul>li{
   display:flex;
+  flex-flow:row wrap;
   justify-content: space-between;
   border-bottom:0.01rem solid black;
   margin:0 1rem;
   padding:1rem 0;
 }
-section.slills .skill-point{
+section.skills .skill-desc{
+  font-size:0.7rem;
+  margin:0.5rem 0;
+}
+section.skills .skill-point{
   display:flex;
   justify-content: space-around;
 }
@@ -132,31 +146,37 @@ section.skills .skill-point span.black{
 }
 
 /*
- * Language
+ * education
  * */
-section.language{
+section.education{
   text-align: center;
 }
-section.language > .title{
+section.education > .title{
   font-size:1.3rem;
   padding:1.5rem 0;
   color:#46BEA9;
 }
-section.language > .title > span{
+section.education> .title  svg{
+  margin-right:0.5rem;
+}
+section.education > .title > span{
   color: black;
 }
-section.language ul>li{
-  display:flex;
-  justify-content: space-between;
-  border-bottom:0.05rem solid black;
+section.education ul>li{
+  text-align: left;
+ /* border-bottom:0.05rem solid black;*/
   margin:0 1rem;
   padding:1rem 0;
 }
-section.language .lang-point{
+section.education .lang-desc{
+  font-size:0.7rem;
+  margin-top:0.5rem;
+}
+section.education .lang-point{
   display:flex;
   justify-content: space-around;
 }
-section.language .lang-point span{
+section.education .lang-point span{
   display:inline-block;
   width:0.7rem;
   height:0.7rem;
@@ -164,8 +184,34 @@ section.language .lang-point span{
   margin:0 0.1rem;
   background-color: #46BEA9;
 }
-section.language .lang-point span.none{
+section.education .lang-point span.none{
   background-color: #BBBBBB;
+}
+/*
+ * translate
+ * */
+section.translate{
+  text-align: center;
+}
+section.translate > .title{
+  font-size:1.3rem;
+  padding:1.5rem 0;
+  color:#46BEA9;
+}
+section.translate> .title  svg{
+  margin-right:0.5rem;
+}
+section.translate > .title > span{
+  color: black;
+}
+section.translate ul>li{
+  text-align: left;
+ /* border-bottom:0.05rem solid black;*/
+  margin:0 1rem;
+}
+section.translate .trans-desc{
+  font-size:0.7rem;
+  margin-top:0.5rem;
 }
 /*
  * Project
@@ -182,6 +228,9 @@ section.project > .title{
   font-size:1.3rem;
   padding:1.5rem 0;
   color:#46BEA9;
+}
+section.project> .title  svg{
+  margin-right:0.5rem;
 }
 section.project > .title > span{
   color: black;
@@ -200,17 +249,28 @@ section.project .proj-detail{
 
 .article{
   width:60rem;
-  padding:4.5rem;
+  padding:3rem 4.5rem;
   background-color: #fff;
   box-shadow: 1px 0px 1px 0px rgba(186,186,186,1);
 }
 .article > header {
   display:flex;
   justify-content: space-around;
+  align-items: center;
 }
-.article > header > img.qrcode{
-  width:6.75rem;
-  height:6.75rem;
+.article > header > .avatar{
+  background:center no-repeat url("./assets/avatar.jpg");
+  border:1px solid #46EBA9;
+  width:8.75rem;
+  height:8.75rem;
+  border-radius:50%;
+  margin-right:2.5rem;
+}
+.article > header > img{
+  border:0.2rem solid rgba(70, 190, 169, 0.5);
+  width:8.75rem;
+  height:8.75rem;
+  border-radius:50%;
   margin-right:2.5rem;
 }
 .article > header > .description{
@@ -223,11 +283,11 @@ section.project .proj-detail{
   color:#46BEA9;
 }
 .article > .title{
-  color:#DADBDA;
-  font-size:2rem;
+  color:#AEAEAD;
+  font-size:1.5rem;
   font-weight:bold;
   text-align:center;
-  margin:5rem 0;
+  margin:3rem 0;
 }
 
 section.experience{
@@ -251,7 +311,7 @@ section.experience::after{
 
 section.experience> .period{
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom:3rem;
 }
 section.experience> .period:last-child{
@@ -278,6 +338,7 @@ section.experience> .period> .left::before{
   z-index: 2;
 }
 section.experience> .period > .left > .time{
+  width:110px;
   background-color:black;
   color:white;
   font-size:0.8rem;
@@ -313,9 +374,11 @@ section.experience> .period> .right> .title > em{
 section.experience> .period> .right> .detail> ul{
   font-size:0.9rem;
   list-style:disc inside none;
+  margin-top:0.8rem;
 }
 section.experience> .period> .right> .detail > ul > li{
   padding:0.3rem 0;
+  line-height:1.4rem;
 }
 
 
