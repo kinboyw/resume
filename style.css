@@ -281,6 +281,7 @@ section.project .proj-detail{
   height:8.75rem;
   border-radius:50%;
   margin-right:2.5rem;
+  flex-shrink:0;
 }
 .article > header > .description{
   font: italic 1.2rem "Fira Sans", serif;
