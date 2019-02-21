@@ -50,7 +50,7 @@ html{
   border:0 solid transparent;
   border-top:1.25rem solid #D6D6D6;
   border-left:18.5rem solid transparent;
-  margin-top:3rem;
+  margin-top:2rem;
 }
 .aside > .avatar > .name{
   font-size:3rem;
@@ -60,7 +60,6 @@ html{
   border-bottom:0.5px solid #9D9B9B;
   width:6rem;
   margin:1rem 0;
-  margin-bottom:2rem;
 }
 .aside > .avatar > .job {
   text-align: center;
@@ -75,7 +74,7 @@ html{
 section.contact{
   display:flex;
   justify-content: center;
-  margin-top:3rem;
+  margin-top:2rem;
   color:#333333;
 }
 section.contact > ul > li{
@@ -98,7 +97,7 @@ section.contact .list-text {
  * */
 section.skills{
   color:#333333;
-  padding:1.5rem 0;
+  padding:1.5rem 0.5rem;
   text-align: center;
   background-color: #46BEA9;
   margin-top:2rem;
@@ -118,16 +117,21 @@ section.skills > .title{
   padding:1.5rem 0;
 }
 section.skills ul>li{
-  display:flex;
-  flex-flow:row wrap;
-  justify-content: space-between;
+  text-align: left;
   border-bottom:0.01rem solid black;
   margin:0 1rem;
   padding:1rem 0;
 }
+section.skills ul>li>.skill-wrapper{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+}
 section.skills .skill-desc{
-  font-size:0.7rem;
+  font-size:0.8rem;
   margin:0.5rem 0;
+  text-indent:1.6rem;
+  line-height:0.9rem;
 }
 section.skills .skill-point{
   display:flex;
@@ -150,10 +154,11 @@ section.skills .skill-point span.black{
  * */
 section.education{
   text-align: center;
+  padding:0 0.5rem;
 }
 section.education > .title{
   font-size:1.3rem;
-  padding:1.5rem 0;
+  padding:1rem 0;
   color:#46BEA9;
 }
 section.education> .title  svg{
@@ -169,7 +174,7 @@ section.education ul>li{
   padding:1rem 0;
 }
 section.education .lang-desc{
-  font-size:0.7rem;
+  font-size:0.8rem;
   margin-top:0.5rem;
 }
 section.education .lang-point{
@@ -192,10 +197,11 @@ section.education .lang-point span.none{
  * */
 section.translate{
   text-align: center;
+  padding:0 0.5rem;
 }
 section.translate > .title{
   font-size:1.3rem;
-  padding:1.5rem 0;
+  padding:1rem 0;
   color:#46BEA9;
 }
 section.translate> .title  svg{
@@ -206,11 +212,11 @@ section.translate > .title > span{
 }
 section.translate ul>li{
   text-align: left;
- /* border-bottom:0.05rem solid black;*/
   margin:0 1rem;
 }
 section.translate .trans-desc{
-  font-size:0.7rem;
+  display:inline-block;
+  font-size:0.8rem;
   margin-top:0.5rem;
 }
 /*
@@ -219,14 +225,16 @@ section.translate .trans-desc{
 section.project{
   text-align: center;
   margin:2rem 0;
+  padding:0 0.5rem;
 }
 section.project > ul > li{
   margin:1rem ;
+  margin-bottom:1.5rem;
   text-align: left;
 }
 section.project > .title{
   font-size:1.3rem;
-  padding:1.5rem 0;
+  padding:1rem 0;
   color:#46BEA9;
 }
 section.project> .title  svg{
@@ -236,11 +244,12 @@ section.project > .title > span{
   color: black;
 }
 section.project  .proj-name{
-  text-align:center;
-  font-weight:900;
+  text-align:left;
 }
 section.project .proj-detail{
-  font: italic 0.8rem "Fira Sans", serif;
+  font:  0.8rem "Fira Sans", serif;
+  text-indent:1.6rem;
+  margin-top:0.5rem;
 }
 
 /*
@@ -339,7 +348,7 @@ section.experience> .period> .left::before{
 }
 section.experience> .period > .left > .time{
   width:110px;
-  background-color:black;
+  background-color:#333333;
   color:white;
   font-size:0.8rem;
   font-weight:bold;
