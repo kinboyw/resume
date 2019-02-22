@@ -2,4 +2,12 @@
  canvas { display: none !important; } 
  .HomeWrapper{ margin:0 auto !important; }
  body{ background-color: #ECECEC !important; }
+ section.experience> .period> .right> .title::after{
+  content:"" !important;
+  border:none !important;
+ }
+  section.experience> .period> .right> .detail .thumbnail{
+    width:300px !important;
+  }
+ 
 }
