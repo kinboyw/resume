@@ -378,17 +378,20 @@ section.experience> .period> .right{
 section.experience> .period> .right> .title{
   font-size:1.2rem;
 }
-section.experience> .period> .right> .title::after{
-  content:"预览";
-  color:#46EBA9;
-  display:inline-block;
-  border:0.1rem solid #46EBA9;
-  border-radius:10%;
-  margin-left:0.5rem;
-  padding:0.2rem 0.4rem;
-}
 section.experience> .period> .right> .title > em{
   font-weight:bold;
+}
+section.experience> .period> .right> .title > .preview{
+  font-size:0.8rem;
+  border:0.1rem solid #46EBA9;
+  border-radius:30%;
+  margin-left:0.7rem;
+  padding:0.3rem;
+}
+section.experience> .period> .right> .title > .preview:hover{
+  background-color:#46EBA9;
+  color:#fff;
+
 }
 section.experience> .period> .right> .detail> ul{
   font-size:0.9rem;
