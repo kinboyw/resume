@@ -10,4 +10,11 @@
     width:300px !important;
   }
  
+  section.experience> .period> .right> .title > .preview{
+    display:none;
+  }
+
+  section.skills{
+    background-image: none !important;
+  }
 }
